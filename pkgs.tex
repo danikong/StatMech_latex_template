@@ -1,0 +1,59 @@
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage[binary-units=true]{siunitx}
+\usepackage{mathtools}
+
+\usepackage{minted}
+\usepackage{color}
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+
+\usepackage{enumitem}
+
+\usepackage{multirow}
+
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\usepackage[utf8]{inputenc}
+
+
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\scriptsize
+			\node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand*\hcircled[1]{\tikz[baseline=(char.base)]{\hspace*{3mm} \scriptsize
+			\node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{basicstyle=\ttfamily,frame=single}
+
+
+\usemintedstyle{pastie}
+\newminted{pycon}{bgcolor=bg, linenos=true, tabsize=4}
+\setmintedinline{fontsize=\footnotesize}
+
+\usepackage{etoolbox}
+
+\makeatletter
+\AtBeginEnvironment{minted}{\dontdofcolorbox}
+\def\dontdofcolorbox{\renewcommand\fcolorbox[4][]{##4}}
+\makeatother
+
+\renewcommand{\bf}[1]{\textbf{#1}}
+
+\newcommand{\mrm}[1]{\mathrm{#1}}
+
+
+% additional commands
+\newcommand{\exercise}[1]{\section*{Beipiel \excNmbr.#1}}
+\newcommand{\answer}[1]{\subsection*{L\"osung #1}}
+\newcommand{\code}[1]{\subsection*{Code #1}}

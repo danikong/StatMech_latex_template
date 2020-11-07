@@ -1,0 +1,48 @@
+\documentclass[a4paper,%
+11pt,%
+% DIV=14,
+% headsepline,%
+% headings=normal,
+]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[automark]{scrpage2}
+
+
+\input{pkgs}
+\input{config_Person_Ue}
+
+
+
+\begin{document}
+
+\hrule
+\vspace*{2ex}
+\begin{center}
+{\LARGE\textbf{\fach}}\\
+{\large{}%
+  \semester \\
+  Assignment \excNmbr\\
+}
+\end{center}
+
+\hrule
+\vspace*{1ex}
+
+\noindent
+\nname, \vname, \mtrnmbr
+\vspace*{1ex}
+\hrule
+
+\setlength{\parindent}{0cm}
+
+\input{exercise/01}
+\include{exercise/02}
+\include{exercise/03}
+\include{exercise/04}
+\include{exercise/05}
+\include{exercise/06}
+
+
+\end{document}
